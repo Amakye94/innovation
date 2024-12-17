@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Doctor</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Register New Doctor</h1>
+            <form id="doctor-register">
+                <label for="doctor-id">Doctor ID:</label>
+                <input type="number" id="doctor-id" name="doctor-id" placeholder="Enter Doctor ID" required>
+
+                <label for="doctor-name">Doctor Name:</label>
+                <input type="text" id="doctor-name" name="doctor-name" placeholder="Enter Doctor's Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/register.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+</body>
+</html>

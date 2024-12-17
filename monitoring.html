@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Rate Monitor</title>
+    <link rel="stylesheet" href="css/stylemon.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Heart Rate Monitor</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="chart-container">
+            <svg id="live-chart" width="600" height="300"></svg>
+        </div>
+
+       
+        <div class="controls-container">
+            <div class="pulse-indicator">
+                <div class="pulse-circle" id="pulse-circle"></div>
+                <p>BPM</p>
+                <p class="bpm-value" id="bpm-value">--</p>
+            </div>
+            <div class="simulate-controls">
+                <p>Simulate Heart Beat?</p>
+                <button id="start-btn" class="simulate-btn">Start</button>
+                <button id="stop-btn" class="simulate-btn" disabled>Stop</button>
+            </div>
+            <div class="capture-controls">
+                <button id="capture-btn" class="simulate-btn" disabled>Capture Splines</button>
+            </div>
+            <div id="analysis-results">
+                <h3>Analysis Results</h3>
+                <p>Average Amplitude: <span id="avg-amplitude">--</span></p>
+                <p>Max Amplitude: <span id="max-amplitude">--</span></p>
+                <p>Min Amplitude: <span id="min-amplitude">--</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/monitoring.js" defer></script>
+</body>
+</html>
