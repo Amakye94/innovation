@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#data-display {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+svg {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
